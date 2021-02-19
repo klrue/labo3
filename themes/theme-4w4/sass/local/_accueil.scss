@@ -1,0 +1,18 @@
+.site-title
+{
+font-family: $font__title;
+font-size: clamp(1.5rem, #{'-0.875rem + 8.333vw'}, 4rem);
+font-weight: bold;
+color:black;
+a{
+    text-decoration: none;
+}
+}
+.site-description
+{
+    font-family: $font__title;
+    font-size: clamp(.8rem, #{'-0.875rem + 8.333vw'}, 1.5rem);
+    font-weight: bold; 
+    text-align: center; 
+    color:black;
+}
