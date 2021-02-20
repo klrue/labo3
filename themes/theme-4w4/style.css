@@ -1026,4 +1026,29 @@ Menu BURGER
   text-align: center;
   color: grey;
 }
+
+body.home {
+  background-color: blanc;
+  height: 100vh;
+  width: 100vw;
+}
+
+body.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: 800px) {
+  body.home::after {
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+    background-color: blue;
+  }
+}
 /*# sourceMappingURL=style.css.map */
