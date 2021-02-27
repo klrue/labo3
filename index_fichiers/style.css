@@ -631,6 +631,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -755,6 +759,8 @@ Menu BURGER
     justify-content: space-around;
     position: static;
     align-items: center;
+    width: 100vw;
+    padding-right: 50px;
   }
   a {
     display: flex;
@@ -1013,10 +1019,20 @@ Menu BURGER
   font-size: clamp(1.5rem, -0.875rem + 8.333vw, 4rem);
   font-weight: bold;
   color: black;
+  animation: pulse 5s infinite alternate;
 }
 
 .site-title a {
   text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #0400ff;
+  }
+  100% {
+    background-color: #09ff00;
+  }
 }
 
 .site-description {
@@ -1028,7 +1044,7 @@ Menu BURGER
 }
 
 body.home {
-  background-color: blanc;
+  background-color: white;
   height: 100vh;
   width: 100vw;
 }
@@ -1048,7 +1064,57 @@ body.home::after {
 @media (min-width: 800px) {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
-    background-color: blue;
+    background-color: #0000d4;
   }
+}
+
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 50vh;
+  font-size: 3rem;
+  transition: transform 1.5s;
+}
+
+.carrousel div {
+  width: 100vw;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #0000d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #0000d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #0000d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.boutonsMenu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.boutonsMenu button {
+  width: 200px;
+  border-radius: 50px;
+  background-color: grey;
+  border: 3px solid black;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */

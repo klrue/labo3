@@ -45,6 +45,19 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+	<section class='carrousel'>
+	<div>Bienvenue sur l'exercice 2</div>
+	<div>26 février 2021</div>
+	<div>Collège de Maisonneuve</div>
+	</section>
+	<article class="boutonsMenu">
+	<button id="un">1</button>
+	<button id="deux">2</button>
+	<button id="trois">3</button>
+	</article>
+	
+
+
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-outline.svg?ic=switch-horizontal&color=000000" width="32" height="32"></button>
 			<?php

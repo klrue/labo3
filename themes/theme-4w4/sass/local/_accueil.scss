@@ -1,12 +1,26 @@
 .site-title
 {
+    
 font-family: $font__title;
 font-size: clamp(1.5rem, #{'-0.875rem + 8.333vw'}, 4rem);
 font-weight: bold;
 color:black;
+animation: pulse 5s infinite alternate;
+
+
 a{
     text-decoration: none;
+   
 }
+}
+
+@keyframes pulse{
+    0% {
+        background-color: #0400ff;
+      }
+      100% {
+        background-color: #09ff00;
+      }
 }
 .site-description
 {
@@ -18,7 +32,7 @@ a{
 }
 
 body.home{
-    background-color:blanc;
+    background-color:white;
     height: 100vh;
     width: 100vw;
 }
