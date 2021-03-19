@@ -46,14 +46,14 @@
 		</div><!-- .site-branding -->
 
 	<section class='carrousel'>
-	<div>Bienvenue sur l'exercice 2</div>
+	<div>Bienvenue sur le labo 4</div>
 	<div>26 février 2021</div>
 	<div>Collège de Maisonneuve</div>
 	</section>
 	<article class="boutonsMenu">
-	<button id="un">1</button>
-	<button id="deux">2</button>
-	<button id="trois">3</button>
+	<button id="un"></button>
+	<button id="deux"></button>
+	<button id="trois"></button>
 	</article>
 	
 
